@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Forms</title>
+    <style>
+        
+
+        .grind_control {
+            padding: 2% ;
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            background-color: rgb(231, 231, 231);
+            max-width: 50rem;
+        }
+
+        .grind_control>div {
+            margin: 0;
+            padding-bottom: 0;
+            /* background-color: #991717; */
+        }
+
+        .grind_control>div:nth-child(1),
+        .grind_control>div:nth-child(2),
+        .grind_control>div:nth-child(10),
+        .grind_control>div:nth-child(14),
+        .grind_control>div:nth-child(19),
+        .grind_control>div:nth-child(24),
+        .grind_control>div:nth-child(25),
+        .grind_control>div:nth-child(26),
+        .grind_control>div:nth-child(27),
+        .grind_control>div:nth-child(28),
+        .grind_control>div:nth-child(29)
+        {
+            grid-column: span 4;
+        }
+
+        .grind_control>div:nth-child(3),
+        .grind_control>div:nth-child(4),
+        .grind_control>div:nth-child(5),
+        .grind_control>div:nth-child(12),
+        .grind_control>div:nth-child(13),
+        .grind_control>div:nth-child(15),
+        .grind_control>div:nth-child(16),
+        .grind_control>div:nth-child(17),
+        .grind_control>div:nth-child(18),
+        .grind_control>div:nth-child(20),
+        .grind_control>div:nth-child(21),
+        .grind_control>div:nth-child(22),
+        .grind_control>div:nth-child(23)
+         {
+            grid-column: span 2;
+        }
+
+        .grind_control>div:nth-child(6) {
+            /* padding-left: 30%; */
+            grid-column: span 2;
+            align-self: center;
+        }
+
+        .grind_control>div:nth-child(7),
+        .grind_control>div:nth-child(9) {
+            grid-column: span 3;
+        }
+
+        .grind_control>div:nth-child(11) {
+            grid-column: span 4;
+            align-self: center;
+        }
+
+        .grind_control>div:nth-child(11) input[type=text],
+        .grind_control>div:nth-child(14) input[type=text]
+         {
+            width: auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        input[type=text],
+        input[type=number],
+        input[type=tel],
+        input[type=email],
+        input[type=date]
+        {
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+        input[type=button]{
+            font-size: 1.2rem;
+            font-weight: 900;
+            width: 20%;
+            height:auto;
+            padding: 10px 0;
+            border-radius: 20px;
+            background: lightgreen;
+        }
+        input[type=button]:hover{
+            color: white;
+            background-color: rgb(25, 224, 25);
+
+        }
+        label {
+            font-size: 1.2rem;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <div class="grind_control">
+            <div>
+                <H1>SCHOOL FORM</H1>
+                <hr>
+            </div>
+            <!-- 2 -->
+            <div>
+                <h2>1. Child's Details</h2>
+            </div>
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" name="fname" id="fname" required>
+            </div>
+            <div>
+                <label for="lname">Surname</label>
+                <input type="text" name="lname" id="lname" required>
+            </div>
+            <div>
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" required>
+            </div>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="male">Female</label>
+                <input type="radio" name="gender" id="gender" value="female">
+            </div>
+            <div>
+                <label for="address">Home Address</label>
+                <input type="text" name="address" id="address" required>
+            </div>
+            <div>
+                <label for="postCode">Post Code</label>
+
+                <input type="number" name="postCode" id="postCode" required>
+            </div>
+            <div>
+                <label for="dateMovingAddress">Date of moving to this address</label>
+                <input type="date" name="dateMovingAddress" id="dateMovingAddress">
+            </div>
+
+            <!-- 10 -->
+            <div>
+                <h2>2. Parents/Carers details</h2>
+            </div>
+            <div>
+                <label for="titlesPrefixing">Mr</label>
+                <input type="radio" name="titlesPrefixing" id="titlesPrefixing" value="mr">
+                <label for="titlesPrefixing">Mrs</label>
+                <input type="radio" name="titlesPrefixing" id="titlesPrefixing" value="mrs">
+                <label for="titlesPrefixing">Miss</label>
+                <input type="radio" name="titlesPrefixing" id="titlesPrefixing" value="miss">
+                <label for="titlesPrefixing">Ms</label>
+                <input type="radio" name="titlesPrefixing" id="titlesPrefixing" value="ms">
+                <label for="titlesPrefixing">Other</label>
+                <input type="text" name="titlesPrefixing" id="titlesPrefixing" placeholder="Other Prefix">
+            </div>
+            <div>
+                <label for="pfname">Firts Name</label>
+                <input type="text" name="pfname" id="pfname" required>
+            </div>
+            <div>
+                <label for="psname">Surname</label>
+                <input type="text" name="psname" id="psname" required>
+            </div>
+            <div>
+                <h3>Relation to the Child</h3>
+                <label for="mother">Mother</label>
+                <input type="radio" name="rel" id="mother" value="mother">
+                <label for="father">Father</label>
+                <input type="radio" name="rel" id="father" value="father">
+                <label for="stepParent">Step Parent</label>
+                <input type="radio" name="rel" id="stepParent" value="Step Parent">
+                <label for="fosterParent">Foster Parent</label>
+                <input type="radio" name="rel" id="fosterParent" value="Foster Parent">
+                <label for="otherP"> Other Parent</label>
+                <input type="text"  name="rel" id="otherP" placeholder="Other Parent">
+            </div>
+            <div>
+                <label for="Dtel">Day Tel No:</label>
+                <input type="tel" name="Dtel" id="Dtel" placeholder="xxx-xx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}">
+            </div>
+            <div>
+                <label for="Etel">Evening Tel No:</label>
+                <input type="tel" name="Etel" id="Etel" placeholder="xxx-xx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}">
+            </div>
+            <div>
+                <label for="mobileNo">Mobile No:</label>
+                <input type="tel" name="mNo" id="mobileNo" placeholder="09xx-xxxx-xxx"
+                    pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}">
+            </div>
+            <div>
+                <label for="email">Email Addres:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <h2>3. Funther Information</h2>
+                <p>If you have any older childer attending the school, * please provide details below.</p>
+            </div>
+            <div> <label for="siblingname">Sibling Fullname : </label>
+                <input type="text" name="siblingname" id="siblingname">
+            </div>
+            <div>
+                <label for="siblingbday">Sibling's Date of birth : </label>
+                <input type="date" name="siblingbday" id="siblingbday">
+            </div>
+            <div>
+                <label for="siblingname">Sibling Fullname : </label>
+                <input type="text" name="siblingname" id="siblingname">
+            </div>
+            <div>
+                <label for="siblingbday">Sibling's Date of birth : </label>
+                <input type="date" name="siblingbday" id="siblingbday">
+            </div>
+            <div>
+                <h4>NURSERY PROVISION IS 5 MORNING OR 5 AFTERNOON SESSIONS, AS SHOWN BELOW</h4>
+            </div>
+            <div>
+                <input type="radio" name="schedule" id="AM">
+                <label for="AM">The morning sessions run from : 8:45am to 11:45am </label>
+            </div>
+            <div>
+                <input type="radio" name="schedule" id="pm">
+                <label for="pm">The afternoon sessions run from : 12:15pm to 3:15pm </label>
+            </div>
+            <div>
+                <input type="radio" name="schedule" id="either">
+                <label for="either">Either : </label>
+            </div>
+            <div>
+                <p >*Where possible parental preference will be taken into account but no quaantee can be
+                    given
+                    asa the allocation of places depends on whether a vacancy exists in the morning or the afternoon. It
+                    would be helpful, therefore, if you could also tick the "Either session" if you do not have a strong
+                    preference.</p>
+                <h4>Please turn over to complete the rest of this application form.</h4>
+                <hr>
+            </div>
+            
+            <div> <input type="button" value="SUBMIT"> </div>
+
+
+
+
+        </div>
+    </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <style>
+        body{ background: #f0ececcc;}
+        div{
+
+            background:white;
+            margin-top: 5%;
+            margin-left: 35%;
+            box-shadow: 10px 10px 8px #8d8b8b;
+            border-collapse: collapse;
+            border-radius:8%;
+            border: 2px solid rgb(82, 81, 81);
+            width: 25%;
+            height: 500px;
+            padding: 20px 10px 50px 10px;
+        }
+        .inputNum{
+            width:320px;
+            height: 50px;
+            border-radius: 0px;
+            font-size: 40px;
+            border-radius:5%;
+            margin-bottom: 15px;
+        }
+        input{
+            width: 78px;
+            height: 50px;
+            border-radius: 10%;
+            border-collapse: collapse;
+            border: 2px solid rgb(82, 81, 81);
+            font-size: 20px;
+            font-weight:700;
+        }
+        .gray{
+            background: #a09e9e6c;
+        }
+        .op{
+            background: #ddf504;
+        }
+        .smallbtn input{
+            height: 40px;
+        }
+        .hovereffect input:hover{
+            background: #1505e96c;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action=""></form>
+        <table>
+            <tr>
+                <td colspan="4"><input class="inputNum" type="text" placeholder="0" style="text-align: right;"></td>
+            </tr>
+            <tr class="smallbtn hovereffect">
+                <td><input class="gray" type="button" value="MC"></td>
+                <td><input class="gray"  type="button" value="MR"></td>
+                <td><input class="gray" type="button" value="M-"></td>
+                <td><input class="gray" type="button" value="M+"></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input class="gray" type="button" value="AC"></td>
+                <td><input class="gray" type="button" value="√X"></td>
+                <td><input class="gray" type="button" value="%"></td>
+                <td><input class="op" type="button" value="÷"></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input type="button" value="7"></td>
+                <td><input type="button" value="8"></td>
+                <td><input type="button" value="9"></td>
+                <td><input class="op" type="button" value="×"></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input type="button" value="4"></td>
+                <td><input type="button" value="5"></td>
+                <td><input type="button" value="6"></td>
+                <td><input class="op" type="button" value="+"></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input type="button" value="4"></td>
+                <td><input type="button" value="5"></td>
+                <td><input type="button" value="6"></td>
+                <td><input class="op" type="button" value="−"></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input type="button" value="1"></td>
+                <td><input type="button" value="2"></td>
+                <td><input type="button" value="3"></td>
+                <td><input class="op" type="button" value="+"></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input type="button" value="0"></td>
+                <td><input type="button" value="."></td>
+                <td><input type="button" value="+/−"></td>
+                <td><input class="op" type="button" value="="></td>
+            </tr>
+            <tr class="hovereffect">
+                <td><input type="button" value="π"></td>
+                <td><input type="button" value="xʸ"></td>
+                <td><input type="button" value="R2"></td>
+                <td><input type="button" value="R0"></td>
+            </tr>
+        </table>
+        </form>
+
+        <p style="text-align: center;">powered by © <strong>Tankzi.Inc</strong></p>
+
+    </div>
+</body>
+
+</html>
