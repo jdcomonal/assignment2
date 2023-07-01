@@ -119,6 +119,29 @@
             font-size: 1.2rem;
         }
 
+        @media (max-width:576px) {
+
+        .grind_control>div:nth-child(3),
+        .grind_control>div:nth-child(4),
+        .grind_control>div:nth-child(5),
+        .grind_control>div:nth-child(12),
+        .grind_control>div:nth-child(13),
+        .grind_control>div:nth-child(15),
+        .grind_control>div:nth-child(16),
+        .grind_control>div:nth-child(17),
+        .grind_control>div:nth-child(18),
+        .grind_control>div:nth-child(20),
+        .grind_control>div:nth-child(21),
+        .grind_control>div:nth-child(22),
+        .grind_control>div:nth-child(23)
+         {
+            grid-column: span 4;
+        }
+        input[type=button]{
+            width: 108px;
+        }
+        }
+
         
     </style>
 </head>
@@ -134,6 +157,7 @@
             <div>
                 <h2>1. Child's Details</h2>
             </div>
+            <!-- 3 -->
             <div>
                 <label for="fname">First name</label>
                 <input type="text" name="fname" id="fname" required>
